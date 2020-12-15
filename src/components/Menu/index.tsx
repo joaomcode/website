@@ -10,20 +10,20 @@ const Menu: React.FC = () => {
     borderBottom: '1px solid #28b1e7',
   };
 
+  const menuProps = [
+    { path: '/', label: 'Home' },
+    { path: '/portfolio', label: 'Portfólio' },
+    { path: '/about', label: 'Sobre' },
+    { path: '/contact', label: 'Contato' },
+  ];
+
   return (
     <Container>
-      <NavLink to="/" exact activeStyle={activeStyle}>
-        Home
-      </NavLink>
-      <NavLink to="/portfolio" activeStyle={activeStyle}>
-        Portfolio
-      </NavLink>
-      <NavLink to="/about" activeStyle={activeStyle}>
-        Sobre
-      </NavLink>
-      <NavLink to="/contact" activeStyle={activeStyle}>
-        Contato
-      </NavLink>
+      {menuProps.map(menu => (
+        <NavLink to={menu.path} exact activeStyle={activeStyle}>
+          <span>{menu.label}</span>
+        </NavLink>
+      ))}
     </Container>
   );
 };
