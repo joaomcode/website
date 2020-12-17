@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.nav`
   a {
     font-size: 1.3em;
     text-decoration: none;
@@ -14,5 +14,9 @@ export const Container = styled.div`
   a:hover {
     color: #28b1e7;
     border-bottom: 1px solid #28b1e7;
+  }
+
+  @media screen and (max-width: 667px) {
+    display: none;
   }
 `;
