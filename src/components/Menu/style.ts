@@ -7,7 +7,7 @@ export const Container = styled.nav`
 
     color: #1e427f;
 
-    margin-right: 20px;
+    margin-left: 20px;
     padding-bottom: 5px;
   }
 
