@@ -25,6 +25,6 @@ export const Content = styled.div`
 `;
 
 export const NavBar = styled.div`
-  margin: 20px;
+  margin: 20px 0;
   float: right;
 `;
