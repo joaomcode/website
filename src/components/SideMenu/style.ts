@@ -4,6 +4,7 @@ export const Container = styled.nav`
   display: none;
 
   @media screen and (max-width: 667px) {
+    position: relative;
     display: flex;
 
     button {
@@ -11,6 +12,7 @@ export const Container = styled.nav`
       margin-top: 3px;
       border: none;
       color: #1e427f;
+      background-color: #fff;
     }
 
     button:hover {
@@ -20,8 +22,20 @@ export const Container = styled.nav`
 `;
 
 export const MenuBar = styled.nav`
+  right: 30px;
+
+  border: 1px solid black;
+  border-radius: 8px;
+
+  position: absolute;
+  background-color: #efefef;
+
   a {
+    font-size: 1.3em;
     text-decoration: none;
+
+    margin: 10px;
+
     display: flex;
     flex-direction: column;
 
