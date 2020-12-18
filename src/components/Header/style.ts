@@ -4,8 +4,8 @@ export const Container = styled.div`
   width: 100%;
   height: 70px;
 
-  background-color: #ededed;
   margin-bottom: 10px;
+  box-shadow: 0 0 1em black;
 `;
 
 export const Content = styled.div`
