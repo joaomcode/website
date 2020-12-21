@@ -17,10 +17,10 @@ const SideMenu: React.FC = () => {
   };
 
   const menuProps = [
-    { path: '/', label: 'Home' },
-    { path: '/portfolio', label: 'Portfólio' },
-    { path: '/about', label: 'Sobre' },
-    { path: '/contact', label: 'Contato' },
+    { key: 'h', path: '/', label: 'Home' },
+    { key: 'p', path: '/portfolio', label: 'Portfólio' },
+    { key: 'a', path: '/about', label: 'Sobre' },
+    { key: 'c', path: '/contact', label: 'Contato' },
   ];
 
   return (
@@ -32,7 +32,12 @@ const SideMenu: React.FC = () => {
       {!hide ? (
         <MenuBar>
           {menuProps.map(menu => (
-            <NavLink to={menu.path} exact activeStyle={activeStyle}>
+            <NavLink
+              key={menu.key}
+              to={menu.path}
+              exact
+              activeStyle={activeStyle}
+            >
               <span>{menu.label}</span>
             </NavLink>
           ))}
