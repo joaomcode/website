@@ -1,14 +1,16 @@
 import React from 'react';
 
-import { Container, Content } from './style';
+import { PagesContainer } from '../../styles/global';
+
+import { Container } from './style';
 
 const Portfolio: React.FC = () => {
   return (
-    <Container>
-      <Content>
-        <h1>Portfolio</h1>
-      </Content>
-    </Container>
+    <PagesContainer>
+      <Container>
+        <h1>Portfólio</h1>
+      </Container>
+    </PagesContainer>
   );
 };
 
