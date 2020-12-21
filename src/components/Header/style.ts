@@ -13,12 +13,7 @@ export const Content = styled.div`
   justify-content: center;
   margin: 0 10%;
 
-  @media screen and (max-width: 568px) {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  @media screen and (max-width: 667px) {
+  @media screen and (max-width: 768px) {
     max-width: 90%;
     margin: 0 5%;
   }

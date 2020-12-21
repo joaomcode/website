@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.nav`
   display: none;
 
-  @media screen and (max-width: 667px) {
+  @media screen and (max-width: 768px) {
     position: relative;
     display: flex;
 

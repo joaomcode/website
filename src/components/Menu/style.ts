@@ -16,7 +16,7 @@ export const Container = styled.nav`
     border-bottom: 1px solid #28b1e7;
   }
 
-  @media screen and (max-width: 667px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
