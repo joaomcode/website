@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/logo.png';
 
@@ -11,7 +12,9 @@ const Header: React.FC = () => {
   return (
     <Container>
       <Content>
-        <img src={logoImg} alt="João M Oliveira logo" />
+        <Link to="/">
+          <img src={logoImg} alt="João M Oliveira logo" />
+        </Link>
         <NavBar>
           <SideMenu />
           <Menu />
