@@ -13,6 +13,7 @@ export const Container = styled.nav`
       border: none;
       color: #1e427f;
       background-color: #fff;
+      cursor: pointer;
     }
 
     button:hover {
