@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.header`
   width: 100%;
-  height: 70px;
+  top: 0;
 
-  margin-bottom: 10px;
+  background: #fff;
+
+  position: fixed;
   box-shadow: 0 0 1em black;
 `;
 
