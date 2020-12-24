@@ -10,13 +10,15 @@ export default createGlobalStyle`
   }
 `;
 
-export const PagesContainer = styled.div`
+export const PagesContainer = styled.main`
   max-width: 80%;
   justify-content: center;
   margin: 0 10%;
+  margin-top: 90px;
 
   @media screen and (max-width: 768px) {
     max-width: 90%;
     margin: 0 5%;
+    margin-top: 90px;
   }
 `;
