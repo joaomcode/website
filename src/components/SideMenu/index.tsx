@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FiAlignJustify, FiX } from 'react-icons/fi';
+import { useClickAway } from 'react-use';
 
 import { Container, MenuBar } from './style';
 
@@ -10,6 +11,11 @@ const SideMenu: React.FC = () => {
   const handleClick = () => {
     setHide(!hide);
   };
+
+  const ref = useRef(null);
+  useClickAway(ref, () => {
+    handleClick();
+  });
 
   const activeStyle = {
     color: '#28b1e7',
@@ -30,7 +36,7 @@ const SideMenu: React.FC = () => {
       </button>
 
       {!hide ? (
-        <MenuBar>
+        <MenuBar ref={ref}>
           {menuProps.map(menu => (
             <NavLink
               key={menu.key}

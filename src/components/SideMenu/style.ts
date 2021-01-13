@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.nav`
+export const Container = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
